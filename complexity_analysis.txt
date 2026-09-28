@@ -1,0 +1,56 @@
+COMPLEXITY ANALYSIS
+
+1. K-WAY MERGE USING MIN HEAP
+
+Let:
+k = number of sorted lists
+N = total number of elements
+
+The Min Heap contains at most one element from
+each sorted list.
+
+Maximum Heap Size:
+O(k)
+
+Time Complexity:
+O(N log k)
+
+Space Complexity:
+O(k)
+
+Reason:
+Each element is inserted into and removed from
+the heap. Heap operations take O(log k) time.
+
+
+2. PAIRWISE MERGING
+
+Pairwise merging combines two sorted lists at a time.
+
+For 3 lists:
+First merge L1 and L2.
+Then merge the result with L3.
+
+Time Complexity:
+Depends on the merge order.
+
+For sequential pairwise merging of k lists,
+the total work can approach O(Nk).
+
+Space Complexity:
+O(N) for intermediate merged arrays.
+
+
+3. COMPARISON
+
+K-way Min Heap:
+- Uses a Min Heap.
+- Heap size is k.
+- Time complexity is O(N log k).
+- Suitable for many sorted files.
+
+Pairwise Merge:
+- Simple array-based approach.
+- Does not use a heap.
+- Intermediate results can become large.
+- Less scalable when the number of files increases.
