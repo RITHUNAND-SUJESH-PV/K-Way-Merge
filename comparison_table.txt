@@ -1,0 +1,32 @@
+COMPARISON TABLE
+
+Parameter                  K-Way Min Heap       Pairwise Merge
+----------------------------------------------------------------
+Data Structure             Min Heap             Arrays
+Heap Size                  k                    No heap
+For this problem           3                    No heap
+Time Complexity             O(N log k)           Depends on order
+Space Complexity            O(k) heap            O(N) intermediate
+Implementation              Moderate             Simple
+Scalability                 High                 Lower
+Suitable for many files    Yes                  Less suitable
+
+
+IMPORTANT RESULTS
+
+Input Lists:
+L1 = 10 30 50 70
+L2 = 20 40 60 80
+L3 = 15 35 55 75
+
+Final Output:
+10 15 20 30 35 40 50 55 60 70 75 80
+
+
+K-WAY MERGE:
+Maximum heap size = 3
+
+
+PAIRWISE MERGE:
+First: L1 + L2
+Second: Result + L3
